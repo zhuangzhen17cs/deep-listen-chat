@@ -2,39 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the therapeutic design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Therapeutic color palette - soft, calming colors */
+    --background: 210 30% 98%;
+    --foreground: 215 25% 27%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 210 30% 99%;
+    --card-foreground: 215 25% 27%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 210 30% 99%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft sage green primary */
+    --primary: 140 35% 55%;
+    --primary-foreground: 210 30% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm neutral secondary */
+    --secondary: 30 15% 92%;
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Gentle muted tones */
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Soft accent - warm lavender */
+    --accent: 260 25% 85%;
+    --accent-foreground: 215 25% 27%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Gentle destructive - soft coral */
+    --destructive: 5 60% 70%;
+    --destructive-foreground: 210 30% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Subtle borders */
+    --border: 210 20% 88%;
+    --input: 210 20% 90%;
+    --ring: 140 35% 55%;
+
+    /* Therapeutic specific colors */
+    --therapeutic-calm: 200 35% 85%;
+    --therapeutic-warm: 25 40% 88%;
+    --therapeutic-listening: 140 30% 92%;
+    --therapeutic-speaking: 260 20% 90%;
+    --therapeutic-pulse: 140 35% 55%;
+
+    /* Gradients for therapeutic ambiance */
+    --gradient-therapeutic: linear-gradient(135deg, hsl(var(--therapeutic-calm)), hsl(var(--therapeutic-warm)));
+    --gradient-listening: linear-gradient(180deg, hsl(var(--therapeutic-listening)), hsl(var(--background)));
+    --gradient-speaking: linear-gradient(180deg, hsl(var(--therapeutic-speaking)), hsl(var(--background)));
+
+    /* Gentle shadows */
+    --shadow-therapeutic: 0 8px 25px -8px hsl(var(--primary) / 0.15);
+    --shadow-gentle: 0 4px 12px -4px hsl(215 25% 27% / 0.08);
 
     --radius: 0.5rem;
 

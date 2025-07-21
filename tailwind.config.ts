@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				therapeutic: {
+					calm: 'hsl(var(--therapeutic-calm))',
+					warm: 'hsl(var(--therapeutic-warm))',
+					listening: 'hsl(var(--therapeutic-listening))',
+					speaking: 'hsl(var(--therapeutic-speaking))',
+					pulse: 'hsl(var(--therapeutic-pulse))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +91,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'therapeutic-pulse': {
+					'0%, 100%': { 
+						transform: 'scale(1)',
+						opacity: '0.8'
+					},
+					'50%': { 
+						transform: 'scale(1.05)',
+						opacity: '1'
+					}
+				},
+				'gentle-float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px)'
+					},
+					'50%': { 
+						transform: 'translateY(-4px)'
+					}
+				},
+				'listening-wave': {
+					'0%, 100%': { 
+						transform: 'scaleY(1)'
+					},
+					'50%': { 
+						transform: 'scaleY(1.2)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'therapeutic-pulse': 'therapeutic-pulse 3s ease-in-out infinite',
+				'gentle-float': 'gentle-float 4s ease-in-out infinite',
+				'listening-wave': 'listening-wave 1.5s ease-in-out infinite'
 			}
 		}
 	},
