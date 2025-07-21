@@ -4,7 +4,7 @@ import { AudioVisualizer } from './AudioVisualizer';
 
 interface Message {
   id: string;
-  type: 'user' | 'therapist';
+  type: 'user' | 'assistant';
   content: string;
   timestamp: Date;
   audioUrl?: string;
@@ -22,18 +22,18 @@ export const ConversationDisplay = ({
   currentUserInput 
 }: ConversationDisplayProps) => {
   return (
-    <Card className="h-96 p-4 bg-gradient-to-b from-therapeutic-listening to-background border-border/50">
+    <Card className="h-96 p-4 bg-gradient-to-b from-ai-listening to-background border-border/50">
       <ScrollArea className="h-full">
         <div className="space-y-4">
           {messages.length === 0 && !isListening && (
             <div className="flex items-center justify-center h-full text-center">
               <div className="space-y-2">
                 <div className="text-lg font-medium text-foreground">
-                  Welcome to UnTherapy
+                  AI Voice Assistant
                 </div>
                 <p className="text-sm text-muted-foreground max-w-md">
-                  I'm here to listen deeply and help you explore what's on your mind. 
-                  Take your time, and share whatever feels right for you today.
+                  I'm your AI assistant. Press the microphone button and start speaking - 
+                  I'll listen, understand, and respond with both text and voice.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export const ConversationDisplay = ({
           {/* Listening indicator */}
           {isListening && !currentUserInput && (
             <div className="flex justify-center">
-              <div className="flex items-center space-x-3 px-4 py-2 rounded-full bg-therapeutic-listening border border-border/50">
+              <div className="flex items-center space-x-3 px-4 py-2 rounded-full bg-ai-listening border border-border/50">
                 <AudioVisualizer isActive={true} type="listening" />
                 <span className="text-sm text-muted-foreground">Listening...</span>
               </div>

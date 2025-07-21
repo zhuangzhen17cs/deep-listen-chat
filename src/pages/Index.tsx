@@ -1,7 +1,7 @@
-import { UnTherapy } from '@/components/UnTherapy';
+import { AIVoiceChat } from '@/components/AIVoiceChat';
 
 const Index = () => {
-  return <UnTherapy />;
+  return <AIVoiceChat />;
 };
 
 export default Index;

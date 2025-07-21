@@ -59,8 +59,8 @@ export const RecordingControls = ({
           }}
           className={`
             h-16 w-16 rounded-full shadow-lg transition-all duration-300
-            ${state === 'recording' ? 'animate-therapeutic-pulse shadow-therapeutic' : ''}
-            ${state === 'paused' ? 'bg-therapeutic-warm hover:bg-therapeutic-warm/90' : ''}
+            ${state === 'recording' ? 'animate-ai-pulse shadow-main' : ''}
+            ${state === 'paused' ? 'bg-ai-secondary hover:bg-ai-secondary/90' : ''}
           `}
           disabled={!!error}
         >

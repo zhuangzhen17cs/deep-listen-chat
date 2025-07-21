@@ -52,12 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				therapeutic: {
-					calm: 'hsl(var(--therapeutic-calm))',
-					warm: 'hsl(var(--therapeutic-warm))',
-					listening: 'hsl(var(--therapeutic-listening))',
-					speaking: 'hsl(var(--therapeutic-speaking))',
-					pulse: 'hsl(var(--therapeutic-pulse))'
+				ai: {
+					primary: 'hsl(var(--ai-primary))',
+					secondary: 'hsl(var(--ai-secondary))',
+					listening: 'hsl(var(--ai-listening))',
+					speaking: 'hsl(var(--ai-speaking))',
+					pulse: 'hsl(var(--ai-pulse))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -92,39 +92,39 @@ export default {
 						height: '0'
 					}
 				},
-				'therapeutic-pulse': {
+				'ai-pulse': {
 					'0%, 100%': { 
 						transform: 'scale(1)',
-						opacity: '0.8'
+						opacity: '0.9'
 					},
 					'50%': { 
-						transform: 'scale(1.05)',
+						transform: 'scale(1.03)',
 						opacity: '1'
 					}
 				},
-				'gentle-float': {
+				'float': {
 					'0%, 100%': { 
 						transform: 'translateY(0px)'
 					},
 					'50%': { 
-						transform: 'translateY(-4px)'
+						transform: 'translateY(-3px)'
 					}
 				},
-				'listening-wave': {
+				'wave': {
 					'0%, 100%': { 
 						transform: 'scaleY(1)'
 					},
 					'50%': { 
-						transform: 'scaleY(1.2)'
+						transform: 'scaleY(1.3)'
 					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'therapeutic-pulse': 'therapeutic-pulse 3s ease-in-out infinite',
-				'gentle-float': 'gentle-float 4s ease-in-out infinite',
-				'listening-wave': 'listening-wave 1.5s ease-in-out infinite'
+				'ai-pulse': 'ai-pulse 2s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'wave': 'wave 1s ease-in-out infinite'
 			}
 		}
 	},

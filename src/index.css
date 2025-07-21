@@ -8,56 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Therapeutic color palette - soft, calming colors */
-    --background: 210 30% 98%;
-    --foreground: 215 25% 27%;
+    /* Modern AI chatbot color palette */
+    --background: 220 15% 97%;
+    --foreground: 220 25% 15%;
 
-    --card: 210 30% 99%;
-    --card-foreground: 215 25% 27%;
+    --card: 220 10% 99%;
+    --card-foreground: 220 25% 15%;
 
-    --popover: 210 30% 99%;
-    --popover-foreground: 215 25% 27%;
+    --popover: 220 10% 99%;
+    --popover-foreground: 220 25% 15%;
 
-    /* Soft sage green primary */
-    --primary: 140 35% 55%;
-    --primary-foreground: 210 30% 98%;
+    /* Modern blue primary */
+    --primary: 220 70% 55%;
+    --primary-foreground: 220 10% 98%;
 
-    /* Warm neutral secondary */
-    --secondary: 30 15% 92%;
-    --secondary-foreground: 215 25% 27%;
+    /* Neutral secondary */
+    --secondary: 220 10% 92%;
+    --secondary-foreground: 220 25% 15%;
 
-    /* Gentle muted tones */
-    --muted: 210 20% 94%;
-    --muted-foreground: 215 15% 55%;
+    /* Subtle muted tones */
+    --muted: 220 8% 94%;
+    --muted-foreground: 220 15% 45%;
 
-    /* Soft accent - warm lavender */
-    --accent: 260 25% 85%;
-    --accent-foreground: 215 25% 27%;
+    /* Modern accent - vibrant blue */
+    --accent: 200 80% 65%;
+    --accent-foreground: 220 25% 15%;
 
-    /* Gentle destructive - soft coral */
-    --destructive: 5 60% 70%;
-    --destructive-foreground: 210 30% 98%;
+    /* Standard destructive */
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 220 10% 98%;
 
-    /* Subtle borders */
-    --border: 210 20% 88%;
-    --input: 210 20% 90%;
-    --ring: 140 35% 55%;
+    /* Clean borders */
+    --border: 220 15% 88%;
+    --input: 220 15% 90%;
+    --ring: 220 70% 55%;
 
-    /* Therapeutic specific colors */
-    --therapeutic-calm: 200 35% 85%;
-    --therapeutic-warm: 25 40% 88%;
-    --therapeutic-listening: 140 30% 92%;
-    --therapeutic-speaking: 260 20% 90%;
-    --therapeutic-pulse: 140 35% 55%;
+    /* AI chatbot specific colors */
+    --ai-primary: 220 70% 55%;
+    --ai-secondary: 200 80% 65%;
+    --ai-listening: 120 40% 88%;
+    --ai-speaking: 260 40% 88%;
+    --ai-pulse: 220 70% 55%;
 
-    /* Gradients for therapeutic ambiance */
-    --gradient-therapeutic: linear-gradient(135deg, hsl(var(--therapeutic-calm)), hsl(var(--therapeutic-warm)));
-    --gradient-listening: linear-gradient(180deg, hsl(var(--therapeutic-listening)), hsl(var(--background)));
-    --gradient-speaking: linear-gradient(180deg, hsl(var(--therapeutic-speaking)), hsl(var(--background)));
+    /* Modern gradients */
+    --gradient-main: linear-gradient(135deg, hsl(var(--ai-primary)), hsl(var(--ai-secondary)));
+    --gradient-listening: linear-gradient(180deg, hsl(var(--ai-listening)), hsl(var(--background)));
+    --gradient-speaking: linear-gradient(180deg, hsl(var(--ai-speaking)), hsl(var(--background)));
 
-    /* Gentle shadows */
-    --shadow-therapeutic: 0 8px 25px -8px hsl(var(--primary) / 0.15);
-    --shadow-gentle: 0 4px 12px -4px hsl(215 25% 27% / 0.08);
+    /* Clean shadows */
+    --shadow-main: 0 8px 25px -8px hsl(var(--primary) / 0.15);
+    --shadow-subtle: 0 4px 12px -4px hsl(220 25% 15% / 0.08);
 
     --radius: 0.5rem;
 

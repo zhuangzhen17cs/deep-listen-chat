@@ -32,9 +32,9 @@ export const AudioVisualizer = ({ isActive, type, className = '' }: AudioVisuali
   const getBarColor = () => {
     switch (type) {
       case 'listening':
-        return 'bg-therapeutic-pulse';
+        return 'bg-ai-pulse';
       case 'speaking':
-        return 'bg-therapeutic-warm';
+        return 'bg-ai-secondary';
       default:
         return 'bg-muted';
     }
